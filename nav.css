@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=poppins:wght@200;300;400;500;600;700;800;900;&display=swap');
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	font-family:'poppins',sans-serif;
+}
+.body{
+	min-height: 100vh;
+	background: light;
+	
+	
+
+}
+.p{
+	font-size: 13px;
+	margin-top: 15px;
+}
+.navigation{
+	position: fixed;
+	width: 60px;
+	height: 100%;
+	background: #3e0748;
+	
+    right: 0px;  
+}
+
+
+.navigation.active{
+	width:300px;
+
+}
+
+.about-left img{
+	width: 100%;
+	height: auto;
+}
+
+.navigation ul{
+	position: relative;
+	width: 100%;
+	top: 0;
+	left: 0;
+
+}
+.navigation ul li{
+	position: relative;
+	width: 100%;
+	list-style: none;
+	padding: 20px;
+}
+.navigation ul li:hover{
+	background: #ea1d63;
+}
+.navigation ul li a{
+	position: relative;
+	display: block;
+	display: flex;
+	text-decoration: none;
+	width: 100%;
+	color: #fff;
+
+		
+}
+
+.navigation ul li a .icon{
+	position: relative;
+	display: block;
+	min-width: 60px;
+	line-height: 60px;
+	height: 60px;
+	text-align: left;
+}
+.navigation ul li a .icon .fa{
+	font-size: 24px; 
+	text-align: left;     
+}
+
+
+
+.navigation ul li a .title{
+	position: relative;
+	display: block;
+	padding: 10px;
+	height: 60px;
+	text-align: left;
+}
+.toggle{
+	position: fixed;
+	top: 0px;
+	right: 0;
+	width: 60px;
+	height: 60px;
+	background: #330748;
+	cursor: pointer;
+}
+.toggle.active{
+	background: #ea1d63;
+}
+.toggle:before
+{
+	content: '\f0c9';
+	font-family: fontAwesome;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	line-height: 60px;
+	text-align: center;
+	font-size: 24px;
+	color: #fff;
+}
+.toggle.active:before
+{
+	content: '\f00d';
+	
+	}
+
+	
+
+
+@media( max-width: 767px)
+{
+	.navigation
+	{    
+		left: -60px;
+		
+
+	}
+	.navigation.active
+	{
+		left: 0px;
+		width: 100%;
+		height: auto;
+		
+	}
+}
+
+
+.about{
+	width: 80%;
+	height: auto;
+	display: flex;
+	margin: auto;
+}
+.about-left{
+	width: 50%;
+	height: auto;
+	padding: 25px;
+	margin-top: 50px;
+
+}
+.image{
+	border-radius: 100px;
+	margin-left: 4rem;
+}
+.about-right{
+	width: 50%;
+	height: auto;
+	padding: 25px;
+	margin-top: 50px;
+
+}
+.mt{
+	margin-top: 0px;
+	border-radius: 70px 70px 70px 70px;
+}
+.workp
+{
+   font-size: 14px;
+   margin-top: 0px;
+   
+}
+.date{
+	color: gray;
+	font-size: 12px;
+	margin-top: 0px;
+}
+.works{
+	margin-left: 60px;
+	margin-top: 3px;
+	margin-bottom: 2px;
+	margin-right: 2px;
+	padding-right: 2rem; 
+	padding-left: 4rem;
+}
+@media (min-width: 768px) {
+  section.works {
+    min-height: 100vh;
+    padding-right: 7rem; 
+    padding-top: 5rem;
+  }
+}

@@ -1,0 +1,301 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+a,a:hover{
+    text-decoration: none;
+}
+
+img{
+    vertical-align: middle;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #222;
+}
+
+.heading__text h2{
+    font-size: 32px;
+    text-transform: capitalize;
+    font-weight: 700;
+    padding-bottom: 50px;
+}
+
+/* ====== common css ends ====== */
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+    background: #f1f1f1;
+}
+.navbar .navbar-brand span{
+    color: #19A463;
+    font-weight: 900;
+    font-size: 32px;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    font-weight: 500;
+    color: #222;
+    font-weight: 18px;
+    padding: 0 20px;
+}
+
+.navbar-light .navbar-nav .active .nav-link,
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #19A463;
+}
+/* ====== navbar css ends ====== */
+
+
+#banner{
+  position: relative;
+}
+
+.owl-theme .owl-nav{
+    
+    font-size: 50px;
+    color: #19A463;
+}
+
+.owl-carousel .owl-nav button.owl-prev{
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    transform: translateY(-50%);
+}
+
+.owl-carousel .owl-nav button.owl-next{
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    transform: translateY(-50%);
+}
+
+.owl-theme .owl-dots{
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.owl-theme .owl-dot span:focus{
+    border: none;
+}
+
+.owl-theme .owl-dots .owl-dot:hover span,
+.owl-theme .owl-dots .owl-dot.active span{
+    background: #19A463;
+}
+/* ====== banner css ends ====== */
+
+.portfolio{
+    padding-top: 40px;
+}
+
+.port_menu ul li{
+    display: inline-block;
+    padding: 5px 10px;
+    text-transform: capitalize;
+    font-weight: 700;
+    margin: 0 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.port_menu ul li:hover,
+.port_menu ul li.active{
+    background: #19A463;
+    color: #fff;
+}
+
+
+
+.portfolio__item{
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.portfolio__item .port__item{
+    width: 25%;
+    margin: 30px 30px 30px 0;
+    position: relative;
+}
+.port__item .img_overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    transform: scale(0);
+    transition: all linear .2s;
+}
+
+.port__item:hover .img_overlay{
+    border-color: #19A463;
+    transform: scale(1);
+}
+
+.port__item .img_overlay .overlay_content{
+    position: absolute;
+    bottom: 2%;
+    left: 2%;
+    color: #fff;
+    
+}
+
+/* ====== portfolio css ends ====== */
+
+.skill .skills_part .chart {
+    position: relative;
+    display: inline-block;
+    width: 130px;
+    height: 130px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.skill .skills_part .chart canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.skill .skills_part .percent {
+    display: inline-block;
+    font-size: 28px;
+    color: #222;
+    line-height: 130px;
+    z-index: 2;
+    position: relative;
+    z-index: 1;
+}
+
+.skill .skills_part .percent:after {
+    position: absolute;
+    content: '%';
+    margin-left: 2px;
+    font-size: 18px;
+    z-index: -1;
+}
+
+.skill .skills_part p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #222;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+/* ====== skill css ends ====== */
+
+
+#facts {
+    background: url(../images/facts_bg.jpg) no-repeat center/cover;
+    position: relative;
+    z-index: 1;
+    padding-top: 90px;
+    padding-bottom: 60px;
+    background-attachment: fixed;
+}
+
+#facts::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+#facts .count_item i {
+    color: #fff;
+    font-size: 48px;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: inline-block;
+    line-height: 100px;
+    transition: all linear .3s;
+}
+
+#facts .count_item i:hover {
+    transform: scale(1.1);
+    color: #19A463;
+    border-color: #19A463;
+}
+
+#facts .count_item h4 {
+    color: #fff;
+    margin-top: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+#facts .count_item p {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding-top: 12px;
+}
+
+/* ====== facts css ends ====== */
+
+
+
+/* ==========================================
+
+               Gallery page css start
+
+======================================================= */
+.gl{
+    padding-top: 100px;
+}
+
+.gl .gl_item{
+    margin-bottom: 30px;
+}
+.gl .gl_item .img {
+    position: relative;
+}
+
+.gl .gl_item .img::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    transition: all linear .3s;
+    transform: scale(0);
+}
+
+.gl .gl_item .img:hover::before{
+    transform: scale(1);
+}
+
+
+
+
+
+
+
+
+

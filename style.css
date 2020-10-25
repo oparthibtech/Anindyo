@@ -7,7 +7,7 @@
 }
 .body{
 	min-height: 100vh;
-	background: light;
+	background: white;
 	
 	
 
@@ -21,13 +21,16 @@
 	width: 60px;
 	height: 100%;
 	background: #3e0748;
-	
+	padding: 0px;
+	margin-top: 0px;
     right: 0px;  
 }
 
 
 .navigation.active{
 	width:300px;
+	margin-top: 0px;
+
 
 }
 
@@ -47,7 +50,7 @@
 	position: relative;
 	width: 100%;
 	list-style: none;
-	padding: 20px;
+	padding: 10px;
 }
 .navigation ul li:hover{
 	background: #ea1d63;
@@ -67,13 +70,14 @@
 	position: relative;
 	display: block;
 	min-width: 60px;
-	line-height: 60px;
-	height: 60px;
+	line-height: 40px;
+	height: 35px;
 	text-align: left;
 }
 .navigation ul li a .icon .fa{
 	font-size: 24px; 
-	text-align: left;     
+	text-align: center;
+	     
 }
 
 
@@ -81,16 +85,17 @@
 .navigation ul li a .title{
 	position: relative;
 	display: block;
-	padding: 10px;
-	height: 60px;
+	line-height: 30px;
+	height: 30px;
 	text-align: left;
+	
 }
 .toggle{
 	position: fixed;
 	top: 0px;
 	right: 0;
 	width: 60px;
-	height: 60px;
+	height: 53px;
 	background: #330748;
 	cursor: pointer;
 }
@@ -151,7 +156,7 @@
 }
 .image{
 	border-radius: 100px;
-	margin-left: 4rem;
+	margin-left: 8rem;
 }
 .about-right{
 	width: 50%;
@@ -177,12 +182,23 @@
 }
 .works{
 	margin-left: 60px;
-	margin-top: 3px;
+	margin-top: 2px;
 	margin-bottom: 2px;
 	margin-right: 2px;
 	padding-right: 2rem; 
 	padding-left: 4rem;
 }
+
+.footer{
+	width: 100%;
+	height: 120px;
+	background-color: #F1F1F1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 100px;
+}
+
 @media (min-width: 768px) {
   section.works {
     min-height: 100vh;

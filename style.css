@@ -70,8 +70,8 @@
 	position: relative;
 	display: block;
 	min-width: 60px;
-	line-height: 40px;
-	height: 35px;
+	line-height: 60px;
+	height: 60px;
 	text-align: left;
 }
 .navigation ul li a .icon .fa{
@@ -85,8 +85,8 @@
 .navigation ul li a .title{
 	position: relative;
 	display: block;
-	line-height: 30px;
-	height: 30px;
+	line-height: 60px;
+	height: 60px;
 	text-align: left;
 	
 }
@@ -95,7 +95,7 @@
 	top: 0px;
 	right: 0;
 	width: 60px;
-	height: 53px;
+	height: 60px;
 	background: #330748;
 	cursor: pointer;
 }
